@@ -1,0 +1,587 @@
+/* style.css : style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+header h1, {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav {
+    background-color: #0055a5;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #003366;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+h1, h2 {
+    color: #003366;
+}
+
+h4 {
+    color: #f7f7f7;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+article {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.banniere{
+background-image: url("DrapeauR.png");
+background-size: cover;
+background-position: center;
+padding:80px 20px;
+border-radius:8px;
+margin-bottom:40px;
+position:relative;
+}
+
+.banniere::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,0.45);
+border-radius:8px;
+}
+
+.banniere-contenu{
+position:relative;
+color:white;
+max-width:500px;
+}
+
+.banniere h1{
+font-size:36px;
+margin-bottom:15px;
+}
+
+.acces-rapide{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.carte{
+display:block;
+background:#f2f2f2;
+padding:20px;
+border-radius:8px;
+text-decoration:none;
+color:black;
+transition:0.00001s;
+}
+
+.carte:hover{
+background:#e4e4e4;
+transform:translateY(-3px);
+}
+
+.carte h3{
+margin-top:0;
+color:#003366;
+}
+
+.bande-message{
+background:#003366;
+color:white;
+overflow:hidden;
+padding:8px 0;
+margin-bottom:25px;
+}
+
+.message-defilant{
+white-space:nowrap;
+display:inline-block;
+padding-left:100%;
+animation:defilement 65s linear infinite;
+}
+
+.message-defilant p{
+display:inline-block;
+margin:0;
+font-size:14px;
+}
+
+@keyframes defilement{
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-100%);
+}
+}
+
+.actus{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.actu{
+background:#f5f5f5;
+border-radius:8px;
+text-decoration:none;
+color:black;
+overflow:hidden;
+transition:0.2s;
+}
+
+.actu:hover{
+transform:translateY(-4px);
+}
+
+.actu img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+.actu h3{
+padding:15px 15px 0 15px;
+color:#003366;
+}
+
+.actu p{
+padding:10px 15px 20px 15px;
+}
+
+.bouton-retour{
+display:inline-block;
+margin-top:30px;
+padding:10px 18px;
+background:#003366;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.bouton-retour:hover{
+background:#00264d;
+}
+
+main{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+color:#0b2c55;
+}
+
+.loi{
+background:white;
+border-left:6px solid #0b2c55;
+padding:20px 25px;
+margin-bottom:25px;
+border-radius:6px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+transition:0.2s;
+}
+
+.loi:hover{
+transform:translateY(-3px);
+box-shadow:0 6px 14px rgba(0,0,0,0.12);
+}
+
+.loi h3{
+margin-top:0;
+color:#0b2c55;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.loi p{
+line-height:1.6;
+text-align:justify;
+}
+.sommaire{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+margin-bottom:40px;
+}
+
+.sommaire a{
+background:#0b2c55;
+color:white;
+padding:8px 14px;
+text-decoration:none;
+border-radius:5px;
+font-size:14px;
+transition:0.2s;
+}
+
+.sommaire a:hover{
+background:#174a8b;
+transform:translateY(-2px);
+}
+
+.sommaire{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+margin-bottom:40px;
+}
+
+.sommaire a{
+background:#0b2c55;
+color:white;
+padding:8px 14px;
+text-decoration:none;
+border-radius:5px;
+font-size:14px;
+transition:0.2s;
+}
+
+.sommaire a:hover{
+background:#174a8b;
+transform:translateY(-2px);
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+main{
+max-width:1000px;
+margin:auto;
+padding:30px;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+color:#0b2c55;
+}
+
+.institution-card{
+background:white;
+border-left:6px solid #0b2c55;
+padding:25px;
+margin-bottom:30px;
+border-radius:6px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.institution-card h2{
+margin-top:0;
+color:#0b2c55;
+}
+
+.institution-desc{
+line-height:1.6;
+text-align:justify;
+}
+
+.representant{
+display:flex;
+gap:25px;
+align-items:center;
+margin-top:15px;
+}
+
+.representant img{
+width:200px;
+border-radius:6px;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+.representant-info h3{
+margin:0;
+font-size:22px;
+color:#0b2c55;
+}
+
+h1::after{
+content:"";
+display:block;
+width:120px;
+height:3px;
+background:#0b2c55;
+margin:15px auto;
+}
+
+.alliance-card{
+background:white;
+border-left:6px solid #0b2c55;
+padding:25px;
+margin-bottom:30px;
+border-radius:6px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.alliance-header{
+display:flex;
+align-items:center;
+gap:25px;
+margin-top:15px;
+}
+
+.alliance-header img{
+width:120px;
+border-radius:6px;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+.alliance-desc{
+margin-top:15px;
+line-height:1.6;
+}
+
+.bloc-diplomatie{
+background:#f8f9fb;
+padding:20px;
+margin-bottom:25px;
+border-radius:6px;
+}
+
+.bloc-diplomatie h3{
+margin-top:0;
+color:#0b2c55;
+}
+
+.membres-alliance{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:15px;
+}
+
+.membres-alliance span{
+background:#0b2c55;
+color:white;
+padding:6px 12px;
+border-radius:5px;
+font-size:14px;
+}
+
+.table-communes{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.table-communes th{
+background:#0b2c55;
+color:white;
+padding:12px;
+text-align:left;
+}
+
+.table-communes td{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
+
+.table-communes tr:nth-child(even){
+background:#f4f6fb;
+}
+
+.telechargements{
+background:#f5f7fb;
+padding:20px;
+border-radius:6px;
+margin-bottom:30px;
+}
+
+.bloc-statistique{
+background:#0b2c55;
+color:white;
+padding:30px;
+border-radius:8px;
+text-align:center;
+margin-bottom:40px;
+}
+
+.population-chiffre{
+font-size:40px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.maj{
+font-size:14px;
+opacity:0.8;
+}
+
+.demographie-bloc{
+background:white;
+padding:25px;
+border-radius:8px;
+margin-bottom:25px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.demographie-bloc h2{
+color:#0b2c55;
+margin-top:0;
+}
+
+.intro-archives{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.archive-bloc{
+background:white;
+padding:25px;
+margin-bottom:30px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.archive-bloc h2{
+color:#0b2c55;
+margin-top:0;
+}
+
+.photo-archives{
+text-align:center;
+margin:40px 0;
+}
+
+.photo-archives img{
+max-width:600px;
+width:100%;
+border-radius:8px;
+}
+
+.photo-archives figcaption{
+margin-top:10px;
+font-style:italic;
+color:#555;
+}
+
+.conclusion{
+text-align:center;
+}
+
+.citation{
+font-size:22px;
+font-weight:bold;
+margin-top:20px;
+color:#0b2c55;
+}
+
+.image-defense{
+text-align:center;
+margin:40px 0;
+}
+
+.image-defense img{
+max-width:800px;
+width:100%;
+border-radius:8px;
+}
+
+.image-defense figcaption{
+margin-top:10px;
+font-style:italic;
+color:#555;
+}
+
+.defense-bloc{
+background:white;
+padding:25px;
+margin-bottom:30px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.defense-bloc h2{
+color:#0b2c55;
+margin-top:0;
+}
+
+.table-defense{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+.table-defense th{
+background:#0b2c55;
+color:white;
+padding:10px;
+}
+
+.table-defense td{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.doctrine{
+margin-top:15px;
+}
+
+.doctrine li{
+margin-bottom:8px;
+}
